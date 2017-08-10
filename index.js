@@ -14,6 +14,14 @@ module.exports = postcss.plugin('postcss-prepend-selector', function (opts) {
                     return selector;
                 }
 
+                if(selector.startsWith('body')) {
+                    return selector;
+                }
+
+                if(selector.startsWith('html')) {
+                    return selector;
+                }
+
                 return opts.selector + selector;
             });
         });

@@ -25,6 +25,14 @@ test('Should not prepend if class is already there', t =>
   run(t, '.selector.example{ }', '.selector.example{ }', { selector })
 );
 
+test('Should no preprend if selector is body', t =>
+    run(t, 'body{ }', 'body{ }', { selector })
+);
+
+test('Should no preprend if selector is html', t =>
+    run(t, 'html{ }', 'html{ }', { selector })
+);
+
 test('Skip keyframe rules', t =>
   run(t, '0%, from {} 100%, to {}', '0%, from {} 100%, to {}', { selector })
 );
