@@ -29,7 +29,7 @@
 ## Usage
 
 ```js
-postcss([ require('postcss-prepend-selector')( { selector: '.selector ' } ) ])
+postcss([ require('postcss-selector-prepend')( { selector: '.selector ' } ) ])
 ```
 
 See [PostCSS] docs for examples for your environment
