@@ -32,4 +32,8 @@
 postcss([ require('postcss-prepend-selector')( { selector: '.selector ' } ) ])
 ```
 
-See [PostCSS] docs for examples for your environment.
+See [PostCSS] docs for examples for your environment
+
+Forked from [ledniy/postcss-prepend-selector]
+
+[ledniy/postcss-prepend-selector]: https://github.com/ledniy/postcss-prepend-selector

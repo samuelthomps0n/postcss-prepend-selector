@@ -26,11 +26,11 @@ test('Should not prepend if class is already there', t =>
 );
 
 test('Should no preprend if selector is body', t =>
-    run(t, 'body{ }', 'body{ }', { selector })
+  run(t, 'body{ }', 'body{ }', { selector })
 );
 
 test('Should no preprend if selector is html', t =>
-    run(t, 'html{ }', 'html{ }', { selector })
+  run(t, 'html{ }', 'html{ }', { selector })
 );
 
 test('Skip keyframe rules', t =>
